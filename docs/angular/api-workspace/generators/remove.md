@@ -1,6 +1,7 @@
 # remove
 
 Remove an application or library
+Remove a project from the workspace
 
 ## Usage
 

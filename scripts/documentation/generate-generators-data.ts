@@ -67,8 +67,12 @@ function generateTemplate(
   const filename = framework === 'angular' ? 'angular.json' : 'workspace.json';
   let template = dedent`
     # ${schematic.name} ${schematic.hidden ? '[hidden]' : ''}
-    ${schematic.description}
-  
+    ${schematic.description}${
+    schematic.rawSchema.description
+      ? '\n    ' + schematic.rawSchema.description
+      : ''
+  }
+    
     ## Usage
     \`\`\`bash
     ${cliCommand} generate ${schematic.name} ...

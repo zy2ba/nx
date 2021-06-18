@@ -1,6 +1,7 @@
 # convert-tslint-to-eslint
 
 Convert a project from TSLint to ESLint
+NOTE: Does not work in --dry-run mode
 
 ## Usage
 

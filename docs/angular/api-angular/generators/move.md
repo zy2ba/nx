@@ -1,6 +1,7 @@
 # move
 
 Move an Angular application or library to another folder
+Move an Angular project to another folder in the workspace
 
 ## Usage
 

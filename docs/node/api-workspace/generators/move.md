@@ -1,6 +1,7 @@
 # move
 
 Move an application or library to another folder
+Move a project to another folder in the workspace
 
 ## Usage
 
