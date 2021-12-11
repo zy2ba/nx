@@ -8,9 +8,7 @@ import {
   convertNxGenerator,
   names,
   getPackageManagerCommand,
-  WorkspaceJsonConfiguration,
   PackageManager,
-  NxJsonConfiguration,
 } from '@nrwl/devkit';
 
 import { join } from 'path';
@@ -281,6 +279,9 @@ function getPresetDependencies(preset: string) {
 
     case Preset.WebComponents:
       return { dependencies: {}, dev: { '@nrwl/web': nxVersion } };
+
+    case Preset.Expo:
+      return { dependencies: {}, dev: { '@nrwl/expo': nxVersion } };
 
     default: {
       const version = getNpmPackageVersion(preset);

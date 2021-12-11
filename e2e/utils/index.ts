@@ -234,6 +234,7 @@ export function newProject({
         `@nrwl/storybook`,
         `@nrwl/web`,
         `@nrwl/react-native`,
+        `@nrwl/expo`,
       ];
       packageInstall(packages.join(` `), projScope);
 
